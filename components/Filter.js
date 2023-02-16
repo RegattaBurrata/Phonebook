@@ -3,7 +3,7 @@ import { useState } from 'react';
 
 export default function Filter({ changeHandler }) {
   return (
-    <form>
+    <form className="filterform">
       filter: <input onChange={changeHandler} />
     </form>
   );

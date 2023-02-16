@@ -1,24 +1,28 @@
-h1,
-p {
+body {
+  margin: 20px;
   font-family: Lato;
 }
 
-.header {
-  font-size: 30px;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  font-weight: 800;
+h2 {
+  font-size: 18px;
 }
 
 .form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
+  margin: 20px;
+}
+
+.filterform {
+  margin: 20px;
 }
 
 .infoblock {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin: 20px;
+  border-bottom: 1px solid black;
 }
 
 input {

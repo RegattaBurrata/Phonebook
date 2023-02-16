@@ -34,8 +34,10 @@ const App = () => {
     e.preventDefault();
     if (persons.find((person) => person.name === newName)) {
       alert(`${newName} is already added to the phonebook`);
-    } else if (newName === '') {
-      alert('cannot submit empty name');
+    } else if (newName === '' || newNumber === '') {
+      alert('Must include name and number');
+    } else if (newNumber.length < 10) {
+      alert('number must be at least 10 digits in length');
     } else {
       const newObj = {
         name: newName,
@@ -48,7 +50,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    console.log(filterPerson);
     const names = persons.map((person) => person.name);
     const search = names.filter((name) =>
       name.toLowerCase().includes(filterPerson)
