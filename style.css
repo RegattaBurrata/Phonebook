@@ -1,0 +1,40 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.header {
+  font-size: 30px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  font-weight: 800;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.infoblock {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+input {
+  width: 140px;
+  padding: 9px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  margin: 10px;
+  font-size: 20px;
+}
+
+button {
+  height: 44px;
+  width: 100px;
+  background: rgb(17, 77, 155);
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
